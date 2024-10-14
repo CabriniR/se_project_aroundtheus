@@ -1,6 +1,5 @@
 /* Header Styles */
 .header {
-    font-family:  Arial, Helvetica, sans-serif;
     border-bottom: 1px solid #545454;
     padding-bottom: 41px;
     min-height: 120px;
@@ -18,9 +17,8 @@
 @media screen and (max-width: 620px) {
 
     .header {
-        font-family: Arial, Helvetica, sans-serif;
         margin-top: 45px;
-        border-bottom: 1px solid #545454;
+        border-bottom: 1px solid rgba(84, 84, 84, 0.7);
         padding-bottom: 32px;
         padding-top: 28px;
        
