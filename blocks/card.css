@@ -5,12 +5,13 @@
     list-style-type: none;
     border-radius: 10px;
     overflow: hidden;
+   
 }
 
 .card__image {
     width: 282px;
     height: 282px;
-    padding-top: 47.25px;
+
 }
 
 .card__description {
@@ -47,10 +48,3 @@
     
 }
 
-@media screen and (max-width: 620px) {
-    .card{
-        padding-top: 36px
-
-}
-   
-  }
