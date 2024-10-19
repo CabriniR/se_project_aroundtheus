@@ -1,35 +1,29 @@
 /* Header Styles */
 .header {
-    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
-    padding-bottom: 41px;
-    min-height: 120px;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  padding-bottom: 41px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .header__logo {
-    width: 173px;
-    height: 33px;
-    padding-top: 45px;
-    
+  width: 173px;
+  height: 33px;
+  padding-top: 45px;
 }
+
 @media screen and (max-width: 620px) {
+  .header {
+    padding-bottom: 32px;
+    padding-top: 28px;
+  }
 
-    .header {
-        border-bottom: 1px solid rgba(84, 84, 84, 0.7);
-        padding-bottom: 32px;
-        padding-top: 28px;
-       
-    }
-    
-    .header__logo{
-        width: 126px;
-        height: 24px;
-        margin-left:27px;
-        padding-top: 0;
-
-}
-
+  .header__logo {
+    width: 126px;
+    height: 24px;
+    margin-left: 27px;
+    padding-top: 0;
+  }
 }
