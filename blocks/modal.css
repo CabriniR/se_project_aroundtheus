@@ -1,0 +1,105 @@
+.modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+}
+
+.modal__container {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 10px;
+  width: 430px;
+  height: auto;
+}
+
+.modal__close {
+  background-image: url("../Images/Close Icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: contain;
+  bottom: calc(100% + 5px);
+  left: calc(100% + 5px);
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.modal_opened {
+  display: flex;
+  text-decoration-color: #000;
+  size: 24px;
+  font-weight: 900;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.modal__input__one {
+  margin-bottom: 29.74px;
+  border: 1px rgba(0, 0, 0, 1);
+  border-radius: 4px;
+  width: 358px;
+  height: 27.34px;
+  margin-right: 36px;
+  background-image: url(../Images/Line\ 2.1.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.modal__input__two {
+  background-image: url(../Images/Line\ 2.1.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border: 1px rgba(0, 0, 0, 1);
+  border-radius: 4px;
+  width: 358px;
+  height: 27.34px;
+}
+
+.modal__button {
+  border: none;
+  background-color: #000;
+  cursor: pointer;
+  width: 358px;
+  height: 50.15px;
+  margin-top: 48px;
+  margin-bottom: 36.51px;
+  font-family: "Inter";
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.modal__heading {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29.05px;
+  text-align: left;
+  color: #000;
+  margin-left: 36px;
+  margin-top: 34px;
+  margin-bottom: 54px;
+}
+
+.modal__input__one::placeholder,
+.modal__input__two::placeholder {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+}
