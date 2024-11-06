@@ -47,7 +47,7 @@
   padding-right: 36px;
 }
 
-.modal__input__one {
+.modal__input--name{
   margin-bottom: 29.74px;
   border: 1px rgba(0, 0, 0, 1);
   border-radius: 4px;
@@ -59,7 +59,7 @@
   background-position: bottom;
 }
 
-.modal__input__two {
+.modal__input--description {
   background-image: url(../Images/Line\ 2.1.svg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -96,8 +96,8 @@
   margin-bottom: 54px;
 }
 
-.modal__input__one::placeholder,
-.modal__input__two::placeholder {
+.modal__input--name::placeholder,
+.modal__input--description::placeholder {
   color: rgba(0, 0, 0, 1);
   font-family: "Inter";
   font-weight: 400;
