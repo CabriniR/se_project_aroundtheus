@@ -47,8 +47,8 @@
   padding-right: 36px;
 }
 
-.modal__input--title,
-.modal__input--description {
+.modal__title-input,
+.modal__description-input {
   margin-bottom: 29.74px;
   border: 1px rgba(0, 0, 0, 1);
   border-radius: 4px;
@@ -87,8 +87,8 @@
   margin-bottom: 54px;
 }
 
-.modal__input--name::placeholder,
-.modal__input--description::placeholder {
+.modal__title-input::placeholder,
+.modal__description-input::placeholder {
   color: rgba(0, 0, 0, 1);
   font-family: "Inter";
   font-weight: 400;
