@@ -47,7 +47,8 @@
   padding-right: 36px;
 }
 
-.modal__input--name{
+.modal__input--title,
+.modal__input--description {
   margin-bottom: 29.74px;
   border: 1px rgba(0, 0, 0, 1);
   border-radius: 4px;
@@ -57,16 +58,6 @@
   background-image: url(../Images/Line\ 2.1.svg);
   background-repeat: no-repeat;
   background-position: bottom;
-}
-
-.modal__input--description {
-  background-image: url(../Images/Line\ 2.1.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  border: 1px rgba(0, 0, 0, 1);
-  border-radius: 4px;
-  width: 358px;
-  height: 27.34px;
 }
 
 .modal__button {
