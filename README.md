@@ -1,4 +1,8 @@
-# Project 3: Around The U.S.
+# Project : Around The U.S.
+
+This project is hosted on GitHub Pages. You can view it here:
+
+[CabriniR] git@github.com:CabriniR/se_project_aroundtheus.git
 
 ### Overview
 
