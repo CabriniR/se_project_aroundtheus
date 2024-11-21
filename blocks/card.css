@@ -41,3 +41,18 @@
   height: 18px;
   border: none;
 }
+
+.card__like-button:hover {
+  transform: scale(1.2); /* Slightly enlarge */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.modal__close:hover {
+  opacity: 0.6;
+}
+
+button,
+.card__like-button,
+.modal__close {
+  cursor: pointer;
+}
