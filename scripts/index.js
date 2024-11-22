@@ -1,30 +1,3 @@
-const initialCards = [
-  {
-    name: "Yosemite Valley",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
-  },
-  {
-    name: "Lake Louise",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lake-louise.jpg",
-  },
-  {
-    name: "Bald Mountains",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/bald-mountains.jpg",
-  },
-  {
-    name: "Latemar",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/latemar.jpg",
-  },
-  {
-    name: "Vanoise National Park",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/vanoise.jpg",
-  },
-  {
-    name: "Lago di Braies",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
-  },
-];
-
 document.addEventListener("DOMContentLoaded", () => {
   // Profile Elements
   const profileEditButton = document.querySelector(".profile__edit-button");
@@ -40,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Cards Section
   const cardContainer = document.querySelector(".cards__list");
+  const cardTemplate = document.querySelector("#card-template");
 
   // --- Modal Functionality ---
   function openModal() {
@@ -71,17 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- Dynamic Card Rendering ---
   function createCard(cardData) {
-    // Create a card element dynamically
-    const cardElement = document.createElement("li");
-    cardElement.classList.add("card");
+    // Clone the card template
+    const cardElement = cardTemplate.content.cloneNode(true);
 
-    cardElement.innerHTML = `
-      <img src="${cardData.link}" alt="${cardData.name}" class="card__image" />
-      <div class="card__description">
-        <h2 class="card__title">${cardData.name}</h2>
-        <button class="card__like-button" type="button"></button>
-      </div>
-    `;
+    // Set the card image, title, and add any other necessary attributes
+    const cardImage = cardElement.querySelector(".card__image");
+    const cardTitle = cardElement.querySelector(".card__title");
+
+    cardImage.src = cardData.link;
+    cardImage.alt = cardData.name;
+    cardTitle.textContent = cardData.name;
 
     return cardElement;
   }
