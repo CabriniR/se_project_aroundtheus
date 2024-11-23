@@ -3,11 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const profileEditButton = document.querySelector(".profile__edit-button");
   const profileEditModal = document.querySelector("#profile-edit-modal");
   const modalCloseButton = profileEditModal.querySelector(".modal__close");
+
   const modalForm = profileEditModal.querySelector(".modal__form");
-  const nameInput = profileEditModal.querySelector(".modal__title-input");
-  const descriptionInput = profileEditModal.querySelector(
-    ".modal__description-input"
-  );
+
+  // Select the inputs by their 'name' attribute
+  const nameInput = profileEditModal.querySelector("[name='title']");
+  const descriptionInput = profileEditModal.querySelector("[name='description']");
+  
   const profileName = document.querySelector(".profile__title");
   const profileDescription = document.querySelector(".profile__description");
 
